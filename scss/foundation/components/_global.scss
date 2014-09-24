@@ -3,6 +3,7 @@
 // Licensed under MIT Open Source
 
 @import "../functions";
+
 //
 // Foundation Variables
 //
@@ -338,8 +339,13 @@ $cursor-help-value: help !default;
 $cursor-text-value: text !default;
 
 
-@include exports("global") {
+$f-global: false !default;
 
+@if $f-global == false {
+
+  $f-global: true;
+  @debug "Global styles output'd.";
+  
   // Meta styles are included in all builds, as they are a dependancy of the Javascript.
   // Used to provide media query values for javascript components.
   // Forward slash placed around everything to convince PhantomJS to read the value.
