@@ -3,7 +3,6 @@
 // Licensed under MIT Open Source
 
 @import "global";
-@import "grid";
 @import "buttons";
 
 //
@@ -316,7 +315,6 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
             font-size: $topbar-link-font-size;
             padding-#{$opposite-direction}: $topbar-link-padding;
             padding-#{$default-float}: $topbar-link-padding;
-            @include button-style($bg:$primary-color);
           }
           &.button.secondary { @include button-style($bg:$secondary-color); }
           &.button.success { @include button-style($bg:$success-color); }
@@ -327,7 +325,6 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
           font-size: $topbar-link-font-size;
           padding-#{$opposite-direction}: $topbar-link-padding;
           padding-#{$default-float}: $topbar-link-padding;
-          @include button-style($bg:$primary-color);
 
           &.secondary { @include button-style($bg:$secondary-color); }
           &.success { @include button-style($bg:$success-color); }
